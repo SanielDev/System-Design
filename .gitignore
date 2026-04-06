@@ -1,0 +1,5 @@
+# Compiled binaries
+**/car
+*.o
+*.out
+*.exe
