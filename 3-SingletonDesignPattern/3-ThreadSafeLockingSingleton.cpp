@@ -3,6 +3,11 @@
 
 using namespace std;
 
+/*
+Thread safe Singleton implementation but the locking mechanism happens regardless of instance being a nullptr or not.
+If instance is not a nullptr then it should directly return instance without starting the locking mechanism.
+*/
+
 class Singleton {
     private:
         static Singleton* instance;
