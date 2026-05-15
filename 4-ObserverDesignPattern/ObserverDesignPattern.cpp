@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/*
+Observer Design Pattern breaks Single Responsiblity Principle
+- The class Channel is handling subscribe, unsubscribe and notify work, which is basically the Observer Design Pattern main functionality
+- The Channel class is also handling the video upload functionality. So this is handling business logic as well as 
+    Observer Design Pattern work.
+
+*/
+
 // Pure abstract class for the Subscriber (Observer)
 class ISubscriber {
     public: 
